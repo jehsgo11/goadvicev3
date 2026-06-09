@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Om oss | Go Advice AS — Teamet og historien bak</title>
+  <meta name="description" content="Go Advice AS ble grunnlagt i 2023 rundt én observasjon: norske bedrifter trenger et system som virker. Møt teamet og les historien bak firmaet." />
+  <link rel="canonical" href="https://www.goadvice.no/om-oss" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Om oss — Go Advice AS" />
+  <meta property="og:description" content="Bygget rundt én observasjon: norske bedrifter trenger et system som virker. Struktur, kapasitet og kontinuitet." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.goadvice.no/om-oss" />
+  <meta property="og:locale" content="nb_NO" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/Logomark_Coloured.png" />
+  <link rel="apple-touch-icon" href="assets/Logomark_Coloured.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "Go Advice AS",
+    "url": "https://www.goadvice.no",
+    "telephone": "+4792667512",
+    "email": "kontakt@goadvice.no",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Snarveien 6",
+      "addressLocality": "Hønefoss",
+      "postalCode": "3517",
+      "addressCountry": "NO"
+    },
+    "areaServed": "NO",
+    "knowsLanguage": "nb",
+    "description": "Regnskapsbyrå for norske bedrifter — fast regnskapspartner eller støtte til intern økonomiavdeling."
+  }
+  </script>
+
+  <style>
+    /* ── Om Oss page ───────────────────────────────────────── */
+    .hero--about .hero__content {
+      padding-top: clamp(5rem, 10vw, 8rem);
+    }
+
+    /* Pull-quote block (right column of solution__grid) */
+    .about-quote {
+      border-left: 3px solid var(--orange);
+      padding-left: clamp(1.5rem, 3vw, 2.5rem);
+    }
+    .about-quote__text {
+      font-size: clamp(1.375rem, 2.5vw, 2rem);
+      font-weight: 700;
+      color: var(--brown);
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+      max-width: none;
+    }
+    .about-quote__source {
+      display: block;
+      margin-top: var(--space-5);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--orange);
+    }
+
+    /* Team section */
+    .team-list {
+      margin-top: clamp(3rem, 5vw, 5rem);
+    }
+    .team-member {
+      display: grid;
+      grid-template-columns: 3rem 1fr;
+      gap: 0 clamp(2rem, 4vw, 4.5rem);
+      padding: clamp(2.5rem, 5vw, 4.5rem) 0;
+      border-top: 1px solid var(--border);
+      align-items: start;
+    }
+    .team-member:last-child { border-bottom: 1px solid var(--border); }
+
+    .team-member__index {
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--orange);
+      padding-top: 0.6rem;
+    }
+    .team-member__name {
+      font-size: clamp(2rem, 4.5vw, 3.5rem);
+      color: var(--brown);
+      letter-spacing: -0.03em;
+      line-height: 0.95;
+      font-weight: 700;
+      margin: 0 0 var(--space-3) 0;
+    }
+    .team-member__role {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: clamp(1rem, 2.5vw, 1.75rem);
+    }
+    .team-member__bio {
+      font-size: clamp(1rem, 1.5vw, 1.125rem);
+      line-height: 1.72;
+      color: var(--grey-light);
+      max-width: 520px;
+    }
+
+    @media (max-width: 480px) {
+      .team-member {
+        grid-template-columns: 2rem 1fr;
+        gap: 0 var(--space-4);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Navigation ──────────────────────────────────────────────────── -->
+  <nav id="site-nav" class="nav nav--transparent" aria-label="Hovednavigasjon">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Go Advice AS — gå til forsiden">
+        <img src="assets/Logo_White.png" alt="Go Advice AS logo" class="logo-white" />
+        <img src="assets/Logo_Coloured.png" alt="Go Advice AS logo" class="logo-coloured" />
+        <img src="assets/Logomark_White.png" alt="Go Advice AS" class="logomark-white" />
+        <img src="assets/Logomark_Coloured.png" alt="Go Advice AS" class="logomark-coloured" />
+      </a>
+      <a href="booking.html" class="btn btn--white btn--sm">Book et møte</a>
+    </div>
+  </nav>
+
+  <!-- ── Hero ────────────────────────────────────────────────────────── -->
+  <section class="hero hero--gradient hero--about" id="hero">
+    <div class="hero__watermark" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <span class="eyebrow animate">Om oss</span>
+      <h1 class="hero__title animate">
+        Du har en bedrift å drive.<br />
+        Vi tar regnskapet.
+      </h1>
+      <p class="hero__sub animate">
+        Faste rutiner, tydelig ansvar og løpende oppfølging — gjennom hele året.
+      </p>
+      <div class="hero__actions animate">
+        <a href="booking.html" class="btn btn--white">
+          Book et møte
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Wave separator -->
+    <div class="hero__wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,64 L0,64 Z" fill="#ffffff"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ── Trust Strip ──────────────────────────────────────────────────── -->
+  <section class="trust-strip section--white" aria-label="Sertifiseringer og partnerskap">
+    <div class="container">
+      <div class="trust-strip__inner">
+        <a href="https://www.finanstilsynet.no/virksomhetsregisteret/detalj/?id=232989"
+           target="_blank" rel="noopener noreferrer"
+           class="trust-strip__item"
+           aria-label="Finanstilsynet — Godkjent regnskapsselskap (åpnes i ny fane)">
+          <img src="assets/finanstilsynet-logo.svg" alt="Finanstilsynet — Godkjent regnskapsselskap" />
+        </a>
+        <div class="trust-strip__divider" aria-hidden="true"></div>
+        <div class="trust-strip__item">
+          <img src="assets/regnskap-norge-black-web.webp" alt="Regnskap Norge — Autorisert medlem" />
+        </div>
+        <div class="trust-strip__divider" aria-hidden="true"></div>
+        <div class="trust-strip__item">
+          <img src="assets/poweroffice-partner-mork.svg" alt="PowerOffice GO — Certified Partner" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Company Story ────────────────────────────────────────────────── -->
+  <section class="section section--cream" id="historien">
+    <div class="container">
+
+      <div class="section__header">
+        <div class="section-divider"></div>
+        <h2 class="animate">Riktig kompetanse.<br />Klart ansvar.</h2>
+        <p class="lead animate">
+          Regnskap trenger ikke å være noe du bekymrer deg for. Det er det vi er her for.
+        </p>
+      </div>
+
+      <div class="solution__grid">
+
+        <div class="animate-left">
+          <p>Go Advice ble grunnlagt fordi bedrifter fortjener en regnskapsfører som faktisk er til stede — en som kjenner situasjonen din, holder orden på tallene og sier fra i god tid hvis noe trenger avklaring.</p>
+          <p>Vi er digitale, men vi er ikke upersonlige. Du møter folk som bryr seg om jobben sin og er lett å komme i kontakt med — uansett hva det gjelder.</p>
+          <p>Go Advice AS er godkjent av Finanstilsynet, medlem av Regnskap Norge og bestod kvalitetskontroll november 2025.</p>
+        </div>
+
+        <div class="animate-right" style="display:flex;align-items:center;">
+          <blockquote class="about-quote">
+            <p class="about-quote__text">
+              «Vi er ikke leverandøren på utsiden. Vi er regnskapsfolkene i teamet ditt.»
+            </p>
+            <cite class="about-quote__source">Kine Camilla Tangen · Regnskapskonsulent</cite>
+          </blockquote>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Three Pillars ────────────────────────────────────────────────── -->
+  <section class="section section--white">
+    <div class="container">
+
+      <div class="section__header">
+        <div class="section-divider"></div>
+        <h2 class="animate">Det vi alltid leverer</h2>
+        <p class="animate">
+          Tre ting som er kjernen i alt vi gjør — uansett hvilken tjeneste du velger.
+        </p>
+      </div>
+
+      <div class="problem__grid stagger">
+
+        <div class="problem-item animate-scale">
+          <h3>Struktur</h3>
+          <p>Faste rutiner, klare frister og tydelig ansvar for hvem som gjør hva. Du vet hva som skjer og når det skjer.</p>
+        </div>
+
+        <div class="problem-item animate-scale">
+          <h3>Kapasitet</h3>
+          <p>Vi tar fullt ansvar for de prosessene vi har avtalt. Ingenting faller mellom to stoler og ingenting hoper seg opp mot frister.</p>
+        </div>
+
+        <div class="problem-item animate-scale">
+          <h3>Kontinuitet</h3>
+          <p>Regnskapet stopper ikke fordi noen er syk eller på ferie. Dokumenterte rutiner sikrer løpende drift — uavhengig av enkeltpersoner.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Team ──────────────────────────────────────────────────────────── -->
+  <section class="section section--cream" aria-labelledby="team-heading">
+    <div class="container">
+
+      <div class="section__header">
+        <div class="section-divider"></div>
+        <h2 id="team-heading" class="animate">Teamet</h2>
+        <p class="animate">
+          Begge er klientvendte og involvert i den daglige leveransen.
+        </p>
+      </div>
+
+      <div class="team-list">
+
+        <div class="team-member animate">
+          <div class="team-member__index" aria-hidden="true">01</div>
+          <div>
+            <h3 class="team-member__name">Jehson Go</h3>
+            <span class="team-member__role">Statsautorisert regnskapsfører · Daglig leder</span>
+            <p class="team-member__bio">Jehson jobber med regnskap siden 2019 og grunnla Go Advice i april 2023. Han fokuserer på struktur, presisjon og digitale rutiner — og på å bygge en regnskapsfunksjon som holder over tid.</p>
+          </div>
+        </div>
+
+        <div class="team-member animate">
+          <div class="team-member__index" aria-hidden="true">02</div>
+          <div>
+            <h3 class="team-member__name">Kine Camilla Tangen</h3>
+            <span class="team-member__role">Regnskapskonsulent</span>
+            <p class="team-member__bio">Kine har jobbet med regnskap i over 20 år. Hun er presis, engasjert og behandler klientenes virksomhet med samme omtanke som sin egen.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Final CTA ─────────────────────────────────────────────────────── -->
+  <section class="final-cta" aria-labelledby="cta-heading">
+    <div class="container">
+      <h2 id="cta-heading" class="animate">Færre overraskelser.<br />Bedre oversikt.</h2>
+      <p class="animate">
+        Book 30 minutter. Vi setter oss inn i situasjonen din og ser om vi er riktig match.
+      </p>
+      <a href="booking.html" class="btn btn--white btn--lg animate">
+        Book et møte
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3.5 9h11M10 5l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── Footer ───────────────────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__main">
+      <div class="container footer__inner">
+
+        <!-- Brand -->
+        <div class="footer__brand">
+          <img src="assets/Logo_White.png" alt="Go Advice AS logo" class="logo-white" />
+          <p class="footer__tagline">Færre overraskelser. Bedre oversikt.</p>
+          <div class="footer__social" aria-label="Sosiale medier">
+            <a href="https://www.linkedin.com/company/goadviceas/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Go Advice AS på LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://www.facebook.com/goadviceas" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Go Advice AS på Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/goadviceas" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Go Advice AS på Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigasjon -->
+        <div class="footer__nav-col">
+          <h4>Navigasjon</h4>
+          <ul>
+            <li><a href="fast-regnskapspartner.html">Fast regnskapspartner</a></li>
+            <li><a href="okonomiteam-support.html">Økonomiteam Support</a></li>
+            <li><a href="om-oss.html">Om oss</a></li>
+            <li><a href="booking.html">Book et møte</a></li>
+          </ul>
+        </div>
+
+        <!-- Kontakt -->
+        <div class="footer__nav-col">
+          <h4>Kontakt</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:kontakt@goadvice.no"><span>kontakt@goadvice.no</span></a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.1a16 16 0 006 6l.46-.46a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+            <a href="tel:+4792667512"><span>+47 926 67 512</span></a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Snarveien 6, 3517 Hønefoss</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <hr class="footer__divider" />
+
+    <div class="footer__legal">
+      <div class="container footer__legal-inner">
+        <p>© 2026 Go Advice AS · Org.nr. 931 426 680</p>
+        <div class="footer__legal-links">
+          <a href="personvern.html">Personvern</a>
+          <a href="vilkar.html">Vilkår</a>
+          <a href="informasjonskapsler.html">Informasjonskapsler</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Cookie Banner ─────────────────────────────────────────────────── -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-labelledby="cookie-banner-title" aria-live="polite">
+    <div class="cookie-banner__text">
+      <p id="cookie-banner-title">
+        Vi bruker informasjonskapsler for å analysere besøk og forbedre opplevelsen.
+        Les mer i vår <a href="informasjonskapsler.html">informasjonskapselerklæring</a>.
+      </p>
+    </div>
+    <div class="cookie-banner__actions">
+      <button class="cookie-btn cookie-btn--decline" data-cookie-decline type="button">Avvis</button>
+      <button class="cookie-btn cookie-btn--accept" data-cookie-accept type="button">Godta</button>
+    </div>
+  </div>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
