@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book et møte | Go Advice AS</title>
+  <meta name="description" content="Book et uforpliktende møte med Go Advice AS. 30 minutter — ingen forpliktelse. Vi ser på din situasjon og finner ut om vi er riktig partner." />
+  <link rel="canonical" href="https://www.goadvice.no/booking" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/Logomark_Coloured.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    body { background: var(--cream); }
+    .booking-page { padding-top: 80px; }
+    .booking-intro {
+      background: var(--brown);
+      padding: clamp(3.5rem, 7vw, 6rem) 0 clamp(3rem, 5vw, 4rem);
+    }
+    .booking-intro h1 { color: var(--white); margin-bottom: var(--space-4); }
+    .booking-intro p {
+      color: rgba(255,255,255,0.75);
+      font-size: clamp(1rem, 1.5vw, 1.125rem);
+      max-width: 560px;
+    }
+    .booking-intro .booking-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-6);
+      margin-top: var(--space-8);
+    }
+    .booking-meta-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      color: rgba(255,255,255,0.65);
+      font-size: 0.9375rem;
+    }
+    .booking-meta-item svg { color: var(--orange); flex-shrink: 0; }
+    .booking-body {
+      padding: 0;
+    }
+    .booking-embed-wrapper {
+      width: 100%;
+    }
+    .booking-embed-wrapper iframe {
+      width: 100%;
+      height: calc(100vh - 80px);
+      min-height: 900px;
+      border: none;
+      display: block;
+    }
+    .booking-fallback-link {
+      display: none;
+      text-align: center;
+      padding: var(--space-8);
+      background: var(--cream);
+    }
+    @media (max-width: 600px) {
+      .booking-embed-wrapper iframe {
+        height: auto;
+        min-height: 1100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="site-nav" class="nav nav--scrolled" aria-label="Hovednavigasjon">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Go Advice AS — gå til forsiden">
+        <img src="assets/Logo_Coloured.png" alt="Go Advice AS logo" class="logo-coloured" />
+        <img src="assets/Logomark_White.png" alt="Go Advice AS" class="logomark-white" />
+        <img src="assets/Logomark_Coloured.png" alt="Go Advice AS" class="logomark-coloured" />
+        <img src="assets/Logo_White.png" alt="" class="logo-white" aria-hidden="true" />
+      </a>
+      <div class="nav__middle">
+        <a href="fast-regnskapspartner.html" class="nav__secondary-link" style="color: var(--brown); opacity: 0.6;">Fast regnskapspartner</a>
+      </div>
+      <a href="okonomiteam-support.html" class="btn btn--outline btn--sm">Økonomiteam Support</a>
+    </div>
+  </nav>
+
+  <div class="booking-page">
+
+    <div class="booking-intro">
+      <div class="container">
+        <h1>La oss snakke</h1>
+        <p>Et uforpliktende 30-minutters møte. Vi ser på situasjonen din og finner ut om vi er riktig partner — uten salgspress.</p>
+        <div class="booking-meta">
+          <div class="booking-meta-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span>30 minutter</span>
+          </div>
+          <div class="booking-meta-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 10l-4 4l6 6l4-16l-18 7l4 2l2 6l3-4"/></svg>
+            <span>Digitalt møte via Teams</span>
+          </div>
+          <div class="booking-meta-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Ingen forpliktelse</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="booking-body">
+        <div class="booking-embed-wrapper">
+          <iframe
+            src="https://outlook.office.com/book/Booketmte@goadvice.no/?ismsaljsauthenabled"
+            title="Book et møte med Go Advice AS"
+            loading="lazy"
+            allow="camera; microphone"
+            aria-label="Bookingkalender — velg tidspunkt for møte med Go Advice AS">
+          </iframe>
+        </div>
+        <div class="booking-fallback-link" id="booking-fallback">
+          <p style="margin-bottom: 1rem; color: var(--grey-light);">Hvis kalenderen ikke vises, kan du booke direkte her:</p>
+          <a href="https://outlook.office.com/book/Booketmte@goadvice.no/?ismsaljsauthenabled"
+             target="_blank" rel="noopener noreferrer"
+             class="btn btn--primary">
+            Åpne booking-siden
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+    </div>
+
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__main">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <img src="assets/Logo_White.png" alt="Go Advice AS logo" class="logo-white" />
+          <p class="footer__tagline">Færre overraskelser. Bedre oversikt.</p>
+          <div class="footer__social" aria-label="Sosiale medier">
+            <a href="https://www.linkedin.com/company/goadviceas/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="https://www.facebook.com/goadviceas" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="https://www.instagram.com/goadviceas" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a>
+          </div>
+        </div>
+        <div class="footer__nav-col">
+          <h4>Navigasjon</h4>
+          <ul>
+            <li><a href="fast-regnskapspartner.html">Fast regnskapspartner</a></li>
+            <li><a href="okonomiteam-support.html">Økonomiteam Support</a></li>
+            <li><a href="om-oss.html">Om oss</a></li>
+            <li><a href="booking.html">Book et møte</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-col">
+          <h4>Kontakt</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:kontakt@goadvice.no"><span>kontakt@goadvice.no</span></a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.1a16 16 0 006 6l.46-.46a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+            <a href="tel:+4792667512"><span>+47 926 67 512</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="footer__divider" />
+    <div class="footer__legal">
+      <div class="container footer__legal-inner">
+        <p>© 2026 Go Advice AS · Org.nr. 931 426 680</p>
+        <div class="footer__legal-links">
+          <a href="personvern.html">Personvern</a>
+          <a href="vilkar.html">Vilkår</a>
+          <a href="informasjonskapsler.html">Informasjonskapsler</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite">
+    <div class="cookie-banner__text">
+      <p>Vi bruker informasjonskapsler for å analysere besøk. Les mer i vår <a href="informasjonskapsler.html">informasjonskapselerklæring</a>.</p>
+    </div>
+    <div class="cookie-banner__actions">
+      <button class="cookie-btn cookie-btn--decline" data-cookie-decline type="button">Avvis</button>
+      <button class="cookie-btn cookie-btn--accept" data-cookie-accept type="button">Godta</button>
+    </div>
+  </div>
+
+  <script src="assets/main.js"></script>
+  <script>
+    /* Show fallback link if iframe fails to load within 8 seconds */
+    setTimeout(() => {
+      const iframe = document.querySelector('.booking-embed-wrapper iframe');
+      const fallback = document.getElementById('booking-fallback');
+      try {
+        if (iframe && (!iframe.contentDocument || iframe.contentDocument.body.innerHTML === '')) {
+          if (fallback) fallback.style.display = 'block';
+        }
+      } catch(e) { /* cross-origin — iframe likely loaded fine */ }
+    }, 8000);
+  </script>
+</body>
+</html>
